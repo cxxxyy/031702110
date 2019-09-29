@@ -48,40 +48,7 @@ def getaddress_1(address):
         address=re.sub(a,'',address)
         
     else:
-        if '内蒙古' in address:
-            a='内蒙古自治区'
-            address=re.sub('内蒙古','',address)
-            
-        elif '新疆维吾尔' in address:
-            a='新疆维吾尔自治区'
-            address=re.sub('新疆维吾尔','',address)
-            
-        elif '新疆' in address:
-            a='新疆维吾尔自治区'
-            address=re.sub('新疆','',address)
-                           
-        elif '广西壮族' in address:
-            a='广西壮族自治区'
-            address=re.sub('广西壮族','',address)
-            
-        elif '广西' in address:
-            a='广西壮族自治区'
-            address=re.sub('广西','',address)
-            
-        elif '宁夏回族' in address:
-            a='宁夏回族古自治区'
-            address=re.sub('宁夏回族','',address)
-            
-        elif '宁夏' in address:
-            a='宁夏回族古自治区'
-            address=re.sub('宁夏','',address)
-            
-        elif '西藏' in address:
-            a='西藏古自治区'
-            address=re.sub('西藏','',address)
-            
-            
-        elif address[0:3]=='黑龙江':
+        if address[0:3]=='黑龙江':
             a='黑龙江省'
             address=re.sub('黑龙江','',address)
             
